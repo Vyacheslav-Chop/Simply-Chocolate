@@ -191,7 +191,7 @@ header .container {
 
 .hero-scroll-link {
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
@@ -353,7 +353,6 @@ header .container {
 
 .desc-benefits {
   width: 308px;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.22;
   letter-spacing: -0.02em;
@@ -378,7 +377,6 @@ header .container {
 
 .text-ingredients {
   max-width: 486px;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -445,7 +443,6 @@ header .container {
   border-radius: 15px;
   transform: translatey(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: scroll;
 }
 
 .item-gallery:hover .block,
@@ -473,7 +470,6 @@ header .container {
   background-color: #fd9222;
 }
 .block-about-text {
-  font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
 }
@@ -487,10 +483,19 @@ header .container {
 }
 
 .block-desc {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.02em;
+  margin: 0;
+  margin-top: 14px;
+  -webkit-line-clamp: 9;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.webkit {
+  -webkit-line-clamp: 8;
 }
 
 
@@ -534,7 +539,6 @@ header .container {
 }
 
 .desc-make {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.26;
   letter-spacing: -0.02em;
@@ -586,7 +590,6 @@ header .container {
 }
 
 .desc-reviews {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -678,7 +681,6 @@ header .container {
 
 .link-contact-footer {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -703,7 +705,6 @@ header .container {
 .link-nav-footer {
   display: block;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
   padding: 12px 0;
