@@ -72,7 +72,7 @@
           </h1>
           <div class="hero-action">
             <div class="hero-btn-list">
-              <button class="hero-btn" type="button">Buy now</button>
+              <button class="hero-btn" type="button" data-modal-open>Buy now</button>
               <a class="hero-link bck-color" href="#make">How it’s made</a>
             </div>
             <div class="hero-scroll">
@@ -199,7 +199,12 @@
                   </li>
                 </ul>
                 <p class="block-desc">
-                  Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.Early-lactation milk, which is called colostrum, contains antibodies that strengthen the immune system.
+                  Milk is a white liquid food produced by the mammary glands of
+                  mammals. It is the primary source of nutrition for young
+                  mammals (including breastfed human infants) before they are
+                  able to digest solid food.Early-lactation milk, which is
+                  called colostrum, contains antibodies that strengthen the
+                  immune system.
                 </p>
               </div>
             </li>
@@ -223,7 +228,12 @@
                   </li>
                 </ul>
                 <p class="block-desc">
-                  Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer benefits such as reducing your risk of heart disease. They’re a good source of fiber, healthy fats, and plant protein. Plus, they’re great on their own.
+                  Almonds, pistachios, and walnuts are some types of nuts that
+                  contain healthy nutrients. When eaten as part of a
+                  nutrient-dense diet, these 9 nuts may offer benefits such as
+                  reducing your risk of heart disease. They’re a good source of
+                  fiber, healthy fats, and plant protein. Plus, they’re great on
+                  their own.
                 </p>
               </div>
             </li>
@@ -247,7 +257,12 @@
                   </li>
                 </ul>
                 <p class="block-desc webkit">
-                  Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is sweeter and more mellow. 
+                  Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
+                  One of the best ways to gain an understanding of this type of
+                  chocolate is to compare it to a different type of chocolate.
+                  Semisweet is darker than milk chocolate. In a taste
+                  comparison, it has a slightly bitter taste whereas milk
+                  chocolate is sweeter and more mellow.
                 </p>
               </div>
             </li>
@@ -375,9 +390,7 @@
             <p class="contact-text">Contact us</p>
             <ul class="list-contact">
               <li class="item-contact tell-footer">
-                <a
-                  class="link-contact-footer"
-                  href="tel:+380684439426"
+                <a class="link-contact-footer" href="tel:+380684439426"
                   >+380 (68) 443-94-26</a
                 >
               </li>
@@ -401,12 +414,106 @@
                 <a class="link-nav-footer" href="#make">How it’s made?</a>
               </li>
               <li class="item-nav-footer">
-                <a class="link-nav-footer" href="#reviews">Chocolate is loved</a>
+                <a class="link-nav-footer" href="#reviews"
+                  >Chocolate is loved</a
+                >
               </li>
             </ul>
           </nav>
+          <div class="footer-form">
+            <form action="javascript:void(0);" class="footer-form">
+              <label class="label-footer-form">
+                <input
+                  class="footer-input-form"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+              </label>
+              <button class="btn-form" type="submit">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
+
+    <!-- =========== modal ================== -->
+
+    <div class="modal-overlay" data-modal>
+      <div class="modal">
+        <button class="close-btn" type="button" data-modal-close>
+          <svg class="close-btn-icon" width="24" height="24">
+            <use href="./images/icons/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
+        <h2 class="title-form">
+          LEAVE A REVIEW ABOUT <span class="part-title">OUR CHOCOLATE</span>
+        </h2>
+        <form action="javascript:void(0);" class="form">
+          <div class="form-box">
+            <label class="label-form" for="user-name">Name</label>
+            <div class="input-box">
+              <input class="input-form" type="text" id="user-name" />
+              <svg class="icon-input" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-box">
+            <label class="label-form" for="user-email">Email</label>
+            <div class="input-box">
+              <input class="input-form" type="email" id="user-email" />
+              <svg class="icon-input" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-box">
+            <label class="label-form" for="user-phone">Phone number</label>
+            <div class="input-box">
+              <input class="input-form" type="tel" id="user-phone" />
+              <svg class="icon-input" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-box-comment">
+            <label class="label-form" for="user-comment">Comment</label>
+            <textarea
+              class="input-form-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <div class="checked-form-box">
+            <input
+              class="input-checked-form visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              id="user-privacy"
+            />
+            <label class="label-checked-form" for="user-privacy">
+              <span class="icon-checked-box">
+                <svg class="icon-checked" width="10" height="10">
+                  <use href="./images/icons/icons.svg#icon-icon"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a
+                class="checked-link"
+                href="https://example.com/privacy-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+          <button class="btn-form-send" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
