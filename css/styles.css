@@ -119,10 +119,7 @@ header .container {
   justify-content: center;
   gap: 18px;
 }
-.header-icon-item {
-}
-.header-icon-link {
-}
+
 .header-icon-img {
   fill: none;
   stroke: #111111;
@@ -802,9 +799,7 @@ header .container {
   background-color: #fafafa;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-top: 38px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 38px 40px;
 }
 
 .modal-overlay:not(.is-open) {
@@ -824,11 +819,23 @@ header .container {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  background-color: #fcf1e0;
+  border: 1px solid #fd9222;
 }
 
 .close-btn-icon {
   stroke: #111111;
-  border: none;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover .close-btn-icon,
+.close-btn:focus .close-btn-icon {
+  stroke: #fd9222;
 }
 
 .title-form {
